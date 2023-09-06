@@ -54,6 +54,7 @@ div#content-nav ul {
 div#content-nav ul a {
     text-decoration: none;
     color: black;
+    ;
 }
 
 div#content-nav ul a:hover {
@@ -63,8 +64,14 @@ div#content-nav ul a:hover {
 }
 
 div#content-nav ul li {
-    margin: 2em 22.5px;
+    
+    padding: 1.9em;
 
+}
+div#content-nav ul li:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: var(--color-azul)
+    
 }
 
 
@@ -85,6 +92,14 @@ div.icons-nav{
 
 }
 
+.icon:hover{
+    width: 27px;
+    height: 27px;
+    transition: 200ms;
+    cursor: pointer;
+
+}
+
 header{
     display: flex;
     align-items: center;
@@ -92,7 +107,8 @@ header{
     flex-direction: column;
     color: white;
     background-color: var(--color-azul-escuro);
-    background-image: url(/images/fundo-header.png);
+    background-image: url(/images/fundo-headerM.png);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
@@ -124,9 +140,18 @@ header{
 
 button{
     background-color: var(--color-azul);
-    padding: 1em 1.25em;
+    padding: 1.15em 2em;
     border: none;
     border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+button:hover{
+    padding: 1.25em 2.15em;
+    transition: 500ms;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 button a {
@@ -160,6 +185,7 @@ section#introduction img{
     font-weight: 700;
     margin-bottom: 1.5em;
     font-size: 2em;
+    color: rgb(7, 7, 7);
       
    }
 
@@ -172,8 +198,292 @@ section#introduction img{
 
 .introduction-content button{
     margin-top: 1.5em;
-      
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
    }
+
+section#services{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.service{
+    padding: 5em 2em 3em 2em;
+    height: 75vh;
+    background-color: #0d0221;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+
+}
+
+.service-Work:hover{
+    padding: 5em 2em 3.5em 2em;
+    transition: 1000ms;
+    box-shadow: inset 0px 0px 100px 40px rgba(0, 0, 0, 0.781);
+    
+}
+
+.service-System:hover{
+    padding: 5em 2em 3.5em 2em;
+    transition: 1000ms;
+    box-shadow: inset 0px 0px 100px 40px rgba(0, 0, 0, 0.781);
+    
+}
+
+.service-Clean:hover{
+    padding: 5em 2em 3.5em 2em;
+    transition: 1000ms;
+    box-shadow: inset 0px 0px 100px 40px rgba(0, 0, 0, 0.781);
+    
+}
+
+.service-Security:hover{
+    padding: 5em 2em 3.5em 2em;
+    transition: 1000ms;
+    box-shadow: inset 0px 0px 100px 40px rgba(0, 0, 0, 0.781);
+    
+}
+
+.service h2 {
+    font-size:3em ;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+.service p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.service-Security{
+    background-image: url(/images/services-security.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.service-Work{
+    background-image: url(/images/services-work.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-Clean{
+    background-image: url(/images/services-security.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.service-System{
+    background-image: url(/images/services-system.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+section#certification{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 2em 9em 2em;
+}
+
+section#certification h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.h1-certification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 1.45em;
+}
+
+.certification-content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.certification-content h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 10px 0px;
+
+}
+
+.certification-content p {
+    color: rgb(150, 150, 150);
+    font-family: 'Roboto', sans-serif;
+}
+
+.certifications{
+    margin: 0.75em 0em;
+}
+
+section#proposal{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 1em 1.75em 1em;
+    background-color: #0d0221;
+    color: white;
+}
+
+.proposal-content {
+    margin-bottom: 1.5em;
+}
+
+.proposal-content h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    
+}
+
+.proposal-content p {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+section#proposal button{
+    width: 250px;
+}
+
+section#references{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.65em 3em 4em 3em;
+    border-bottom: 1px solid grey;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.426);
+}
+
+section#references h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.85em;
+
+}
+
+#carrousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em 1em 2em 1em;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: scroll;
+    
+
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    color: grey;
+}
+
+#carrousel img{
+    height: 115px;
+    width: 110px;
+
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25em 1em 2em 1em;
+    font-family: 'Roboto', sans-serif;
+    
+
+
+}
+
+.desktop{
+    display:none ;
+   
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+
+footer img{
+    width: 60px;
+    height: 50px;
+    margin: 1em;
+    border-radius: 20px;
+
+}
+
+.content-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.content-footer p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    width: 80%;
+    
+}
+
+.mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 1em 1em 1em;
+}
+
+.footer-icons{
+    margin: 2px;
+}
+
+.content-aside{
+    flex-direction: column;
+}
+
+.content-aside p{
+    margin: 3px;
+    color: #19053e
+
+}
+
+.content-aside a {
+    margin: 3px;
+    color: rgb(150, 150, 150)
+    
+}
+
+.hide{
+    display: none;
+}
+
+.p-content{
+    margin: 10px 0px;
+
+}
+
+
 
 
 
@@ -188,13 +498,13 @@ section#introduction img{
 
 @media (min-width: 788px) {
 
-    nav{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.25em 1em;
-       
-    }
+nav{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1em;
+    
+}
 
     
 div#content-nav{
@@ -213,6 +523,19 @@ div#content-nav ul {
     flex-direction: row;
 }
 
+div#content-nav ul li{
+
+   padding: 2.4em 1.9em;
+
+}
+
+div#content-nav ul li:hover{
+    box-shadow:none;
+    border-bottom: 4px solid var(--color-azul);
+   transition: 300ms;
+    
+}
+
 div.icons-nav{
     display: flex;
    margin: 1em;
@@ -227,6 +550,9 @@ header{
     height: 90vh;
     align-items: start;
     padding: 10em 0em 10em 9em;
+    background-image: url(/images/fundo-header5.png);
+    background-position: top center;
+    
 }
 
 .content-header{
@@ -254,9 +580,16 @@ header{
 
 
 #main-header button {
-    padding: 1.5em 3.5em;
+    padding: 1.4em 3em;
 
 
+}
+
+#main-header button:hover{
+    padding: 1.55em 3.6em;
+    transition: 500ms;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 #main-header button a{
@@ -302,10 +635,120 @@ section#introduction{
 .introduction-content button{
     margin-top: 1.5em;
     font-size: 1em;
-    padding: 1.25em 2.25em;
+    padding: 1.15em 2.15em;
 
       
    }
+
+  .introduction-content button:hover{
+    padding: 1.45em 2.45em;
+   
+}
+
+   section#services{
+    flex-direction: row;
+
+}
+
+.service{
+    height: 20vh;
+    padding: 20em 2em 1.25em 2em;
+    width: 25vw;
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.service-Security:hover{
+  
+    transition: 1000ms;
+    
+}
+.service-Security:hover{
+    padding: 17.75em 2em 3.5em 2em;
+    transition: 700ms;
+    
+}
+
+.service-Work:hover{
+    transition: 1000ms;
+    
+}
+.service-Work:hover{
+    padding: 17.75em 2em 3.5em 2em;
+    transition: 700ms;
+    
+}
+
+.service-Clean:hover{
+    transition: 1000ms;
+    
+}
+.service-Clean:hover{
+    padding: 17.75em 2em 3.5em 2em;
+    transition: 700ms;
+    
+}
+
+.service-System:hover{
+    transition: 1000ms;
+    
+}
+.service-System:hover{
+    padding: 17.75em 2em 3.5em 2em;
+    transition: 700ms;
+    
+}
+
+
+.service h2{
+    font-size: 1.25em;
+}
+
+.service p{
+    font-size: 15px;
+}
+
+section#proposal{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5em 1em 1.75em 1em;
+}
+
+section#proposal button{
+    width: auto;
+    margin: 5px 2em;
+}
+
+section#proposal button:hover{
+    margin: 2px 1.8em;
+    font-size: 14.5px;
+}
+
+section#references h1{
+
+    font-size: 2.3em;
+
+}
+
+.desktop{
+    display:flex ;
+}
+.mobile{
+    display: none;
+}
+footer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.right{
+    margin-left: 5vw;
+}
+
+
+
+
     
 }
 
@@ -329,7 +772,7 @@ section#introduction{
     section#introduction{
 
         flex-direction: row;
-        padding: 7em 3em;
+        padding: 7em 3em 9em 3em;
        
     
     }
@@ -362,5 +805,95 @@ section#introduction{
           
        }
 
+       .service{
+       
+        padding: 22em 2em 1.5em 2em;
+        
+    }
+
+    .service h2{
+        font-size: 1.6em;
+    }
+
+    .certification-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 85%;
+    }
+
+    .certifications{
+        margin: 0.75em 3em;
+    }
+
+    section#proposal{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2.75em 1em 2em 1em;
+    }
+
+    section#proposal button{
+        width: auto;
+        margin: 5px 2em;
+    }
+
+    section#proposal h1{
+        font-size: 1.85em;
+    }
+
+
+    section#proposal button a {
+        font-size: 1.25em;
+    }
+    
+    .right{
+        margin-left: 8.25vw;
+    }
+
+    footer{
+        padding: 1.25em 2em 1.5em 1.5em;
+    }
+    
+    .service-Security:hover{
+        transition: 1000ms;
+        
+    }
+    .service-Security:hover{
+        padding: 20em 2em 3.5em 2em;
+        transition: 700ms;
+        
+    }
+
+    .service-Work:hover{
+        transition: 1000ms;
+        
+    }
+    .service-Work:hover{
+        padding: 20em 2em 3.5em 2em;
+        transition: 700ms;
+        
+    }
+
+    .service-Clean:hover{
+        transition: 1000ms;
+        
+    }
+    .service-Clean:hover{
+        padding: 20em 2em 3.5em 2em;
+        transition: 700ms;
+        
+    }
+
+    .service-System:hover{
+        transition: 1000ms;
+        
+    }
+    .service-System:hover{
+        padding: 20em 2em 3.5em 2em;
+        transition: 700ms;
+        
+    }
+    
+    
     
 }

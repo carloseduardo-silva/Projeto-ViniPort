@@ -15,9 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-  <title>Document</title>
+  <title>ViniPort Serviços</title>
 </head>
 <style>
   .none{
@@ -42,16 +43,18 @@
       </div>
       <div class="none" id="content-nav">
         <ul>
-          <li> <a href="#">Home</a></li>
+          <li> <a href="/">Home</a></li>
           <li> <a href="">Serviços</a></li>
-          <li> <a href=""> Institucional</a></li>
-          <li> <a href=""> Solicite uma Proposta</a>
+          <li> <a href="institucional"> Institucional</a></li>
+          <li> <a href="proposal"> Solicite uma Proposta</a>
           </li>
+          <li> <a href="contact"> Contato</a></li>
         </ul>
       </div>
       <div class="icons-nav">
         <img class="icon" src="/images/icons8-instagram-50.png" alt="instagram">
         <img class="icon" src="/images/icons8-whatsapp-50.png" alt="whatsapp">
+        <img class="icon" src="/images/icons8-linkedin-50.png" alt="instagram">
       </div>
     </nav>
   </div>
@@ -65,7 +68,9 @@
         com uma vivência direta junto a Empresários e Administradores, visando melhorias na qualidade de serviços. </p>
     </div>
 
-    <button> <a href="#"> NOSSOS SERVIÇOS</a></button>
+    <button> 
+      <a href="#services">NOSSOS SERVIÇOS</a> 
+      <a style="margin-left: 10px;" href="#services">➜</a></button>
 
   </header>
 
@@ -83,7 +88,11 @@
 
       </div>
 
-      <button> <a href="#"> SAIBA MAIS </a></button>
+      <button> 
+        <a href="#"> SAIBA MAIS </a>
+        <a style="margin-left: 10px;" href="#">➜</a>
+      
+      </button>
 
       
     </div>
@@ -95,62 +104,79 @@
 
   <section id="services" >
 
-    <div class="service-Lobby"></div>
+    <div class="service service-Security">
+      <h2>VP SECURITY</h2>
+      <p> Porteiros, Controladores de Acesso, Eventuais para Festas, Shows e Confêrencias. </p>
 
-    <div class="service-Work"></div>
+      <p class="hide p-content">Contamos com uma equipe de controle de acesso altamente qualificada que se adapta em todo o tipo de empreendimento</p>
+    </div>
 
-    <div class="service-Clean"></div>
+    <div class="service service-Work">
+      <h2>VP WORK</h2> 
+      <p>Reçepção, Copa, Telefonia, Informática, Ajudante Geral</p>
 
-    <div class="service-System"></div>
+      <p class="hide p-content"> Nossos profissionais são qualificados e treinados em bom atendimento, linguagem, postura e conduta para lidar com atendimento ao público</p>
+    </div>
 
-  </section>
+    <div class="service service-Clean">
+      <h2> VP CLEAN UP</h2>
+      <p> Limpeza, Conservação, Jardinagem 
+      </p>
 
-
-  <section id="proposal">
-
-    <div class="proposal-content">
-
-      <h1> Titulo </h1>
-
-      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, quo voluptatibus libero eligendi minus illum aliquid reprehenderit aut molestias tenetur voluptatem</p>
+      <p class="hide p-content">Contamos com profissionais especializados que realizam a limpeza dos ambientes de forma rápida e eficaz</p>
 
     </div>
 
-    <button> <a href="#"> SOLICITE UMA PROPOSTA </a></button>
+    <div class="service service-System">
+      <h2>VP SYSTEM</h2>
+      <P>Sistema Eletrônico e Monitoramento de Segurança/Cargas</P>
+
+      <p class="hide p-content">Tenha um empreendimento protegido e seguro com a instalação de equipamentos eletrônicos, procurando tornar escassa a possibilidade de sinistros em sua Empresa.</p>
+    </div>
 
   </section>
 
+
+ 
   <section id="certification"> 
 
-    <h1>Sempre o melhor em Serviços </h1>
+    <div class="h1-certification">
+      <h1>Sempre o melhor em serviços </h1>
+      <span style="font-size: 75px;;" class="material-symbols-outlined">
+        horizontal_rule
+        </span>
+    </div>
 
     <div class="certification-content">
 
-        <div>
+        <div class="certifications">
 
           <h2>Uniformes Personalizados</h2>
-          <p></p>
+          <p>Oferecemos a possibilidade de escolha de uniformes para que os profissionais se adequem ao perfil da sua empresa.</p>
 
       </div>
 
-      <div>
+      <div class="certifications">
 
         <h2>Cronograma de Serviços </h2>
-        <p></p>
+        <p>Temos como meta a implantação de sistemas terceirizados com auditorias de qualidade, visando exclusivamente a satisfação de nossos clientes.
+       </p>
     
     </div>
 
-      <div>
+      <div class="certifications">
 
         <h2>Supervisao e Fiscalização </h2>
-        <p></p>
+        <p>
+         Atuamos nos padrões exigidos, contando com pessoal técnico altamente qualificado que prestará com eficiência e rapidez,
+           completa assistência à sua empresa. </p>
 
     </div>
 
-    <div>
+    <div class="certifications">
 
       <h2>Banco de Profissionais</h2>
-      <p></p>
+      <p>Nós temos profissionais na reserva para atender contratos fechados de última hora e também para substituição de profissionais.</p>
 
   </div>
 
@@ -158,20 +184,86 @@
     
   </section>
 
+  <section id="proposal">
+
+    <div class="proposal-content">
+
+      <h1> Terceirização para qualquer segmento.</h1>
+
+      <p> Limpeza, Controle de acesso, Segurança e mais.</p>
+
+    </div>
+
+    <button> <a href="#"> SOLICITE UMA PROPOSTA </a></button>
+
+  </section>
+
+  <section id="references">
+
+    <div class="h1-certification">
+      <h1>Parceiros ViniPort Serviços</h1>
+      <span style="font-size: 75px;;" class="material-symbols-outlined">
+        horizontal_rule
+        </span>
+    </div>
+
+    <div id="carrousel">
+
+      <img style="height: 110px;" src="images/logo-speed.png" alt="">
+      <img src="images/logo-habibs.png" alt="">
+      <img src="images/logo-mcdonald.png" alt="">
+      <img src="images/logo-zincagem.png" alt="">
+      <img src="images/logo-pao.png" alt="">
+
+    </div>
+
+  </section>
+
+
   <footer>
 
     
-    <aside class="content-aside">  </aside>
+    <aside class="desktop content-aside">
+      <p class="bold"> Sobre sua compra na nossa loja online</p>
+        <a href="#">Política de Frete</a>
+        <a href="#">Política de Pagamentos</a>
+        <a href="#">Política de Devolução e Troca</a>
+        <a href="#">Política de Privacidade</a>
+    </aside>
 
-    <div>
-       <img src="" alt="logo">
-      <h3>Titulo</h3>
-      <p></p>
+    <div class="content-footer">
+       <img src="/images/logo-vp2.jpg" alt="logo">
+      
+       <div class="footer-icons">
+
+        <img class="icon" src="/images/icons8-instagram-50.png" alt="instagram">
+        <img class="icon" src="/images/icons8-whatsapp-50.png" alt="whatsapp">
+        <img class="icon" src="/images/icons8-linkedin-50.png" alt="instagram">
+        
+
+       </div>
+
+      <p>ViniPort Serviços Terceirização Ltda - Rua Topázio, 195 - CEP 101900-600 - Diadema - SP - Centro </p>
+      <p> TODOS OS DIREITOS RESERVADOS</p>
       
     </div>
 
-    <aside class="content-aside right"> </aside>
+    <section class="mobile content-aside">
+      <p class="bold"> Sobre sua compra na nossa loja online:</p>
+        <a href="#">Política de Frete</a>
+        <a href="#">Política de Pagamentos</a>
+        <a href="#">Política de Devolução e Troca</a>
+        <a href="#">Política de Privacidade</a>
+    </section>
+
+    <aside class="desktop content-aside right"> 
+      <p class="bold"> Podemos te Ajudar?</p>
+      <a href="#contact">Contato</a> 
+    </aside>
+
+
   </footer>
+
 
 
 
