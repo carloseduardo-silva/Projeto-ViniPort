@@ -1,0 +1,490 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+:root{
+    --color-azul-escuro: #0d0221;
+    --color-azul-claro: #a6cfd5;
+    --color-azul: #26408b
+
+}
+
+.none{
+    display: none;
+}
+.flex{
+  display: flex;
+}
+
+.institucional-active{
+    border-bottom: 3px solid var(--color-azul);
+}
+
+#nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.723);
+    padding: 5px;
+}
+
+div.logo-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+div.logo-nav img{
+    width: 60px;
+    height: 50px;
+    margin: 1em;
+}
+
+div#content-nav{
+   
+    flex-direction: column;
+}
+
+div#content-nav ul {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+div#content-nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+div#content-nav ul a:hover {
+   color: var(--color-azul);
+  
+
+}
+
+div#content-nav ul li {
+    
+    padding: 1.9em;
+
+}
+div#content-nav ul li:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: var(--color-azul)
+    
+}
+
+
+
+div.icons-nav{
+    display: none;
+}
+
+#menu-hamburguer{
+    margin: 0.7em;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    margin: 10px ;
+
+}
+
+.icon:hover{
+    width: 27px;
+    height: 27px;
+    transition: 200ms;
+    cursor: pointer;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--color-azul-escuro);
+    background-image: url(/images/fundo-headerM.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 14em 1em 8em 1em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header h1{
+    text-align: center;
+
+}
+
+header h1:hover{
+   color: var(--color-azul);
+   transition: 700ms;
+    cursor: pointer;
+    
+}
+
+section#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6em 1em;
+    
+}
+
+#form-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form-content h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    width: 65%;
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px;
+
+}
+
+.row{
+    width: 65%;
+}
+
+form input{
+    border: 1px solid rgb(151, 151, 151);
+    padding: 15px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+label{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.row1-form input{
+    margin: 1.2em 0em;
+}
+
+.row2-form input{
+    margin: 1.2em 0em;
+}
+
+.row3-form{
+    margin: 2.25em 0em 1.9em 0em;
+}
+
+.row3-form input{
+    margin-bottom: 2em;
+}
+
+form input::placeholder{
+    color:rgb(151, 151, 151) ;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+
+}
+
+form textarea{
+    margin-left: 25px;
+    padding: 1em;
+    width: 65%;
+    min-width: 65%;
+    max-width: 65.5%;
+}
+
+form textarea::placeholder{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+form button{
+    color: white;
+    background-color: var(--color-azul);
+    padding: 1.15em 2em;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 3em 0em 1.5em 0em;
+
+}
+
+form button:hover{
+    padding: 1.25em 2.15em;
+    transition: 500ms;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25em 1em 2em 1em;
+    font-family: 'Roboto', sans-serif;
+    
+
+
+}
+
+.desktop{
+    display:none ;
+   
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+
+footer img{
+    width: 60px;
+    height: 50px;
+    margin: 1em;
+    border-radius: 20px;
+
+}
+
+.content-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.content-footer p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    width: 80%;
+    
+}
+
+.mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 1em 1em 1em;
+}
+
+.footer-icons{
+    margin: 2px;
+}
+
+.content-aside{
+    flex-direction: column;
+}
+
+.content-aside p{
+    margin: 3px;
+    color: #19053e
+
+}
+
+.content-aside a {
+    margin: 3px;
+    color: rgb(150, 150, 150)
+    
+}
+
+.hide{
+    display: none;
+}
+
+.p-content{
+    margin: 10px 0px;
+
+}
+
+
+
+
+@media (min-width:788px) {
+    nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 1em;
+        
+    }
+    
+        
+    div#content-nav{
+        display: flex;
+    }
+    
+    
+    div.logo-nav{
+     
+        width: auto;
+    
+    }
+    
+    div#content-nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    div#content-nav ul li{
+    
+       padding: 2.4em 1.9em;
+    
+    }
+    
+    div#content-nav ul li:hover{
+        box-shadow:none;
+        border-bottom: 4px solid var(--color-azul);
+       transition: 300ms;
+        
+    }
+    
+    div.icons-nav{
+        display: flex;
+       margin: 1em;
+       
+    }
+    
+    #menu-hamburguer{
+        display: none;
+    }
+    
+    header{
+        height:auto;
+        align-items:center;
+        padding: 17em 1em 8em 1em;
+        background-image: url(/images/fundo-headerM.png);
+        background-position: top center;
+        
+    }
+
+
+   
+
+   
+
+    .desktop{
+        display:flex ;
+    }
+    .mobile{
+        display: none;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .right{
+        margin-left: 5vw;
+    }
+    
+}
+
+@media (min-width:1000px) {
+
+    .content-header h1{
+        font-size: 4em ;
+      
+    }
+    
+    .content-header p{
+        font-size: 18px ;
+      
+        
+    }
+
+    header{
+        padding: 15em 1em 8em 1em;
+    }
+
+    .div-content p{
+        margin: 0.25em 1.5em 1.5em 1.5em;
+    }
+
+    section#content{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .row{
+        display: flex;
+    }
+
+ 
+    .right{
+        margin-left: 8.25vw;
+    }
+
+    footer{
+        padding: 1.25em 2em 1.5em 1.5em;
+    }
+    
+    
+   
+    
+}
+
+@media (max-width: 570px) {
+
+    .row{
+        width: 85%;
+    }
+
+    #form-content h2{
+        width: 85%;
+    }
+
+    form textarea{
+        width: 85%;
+        min-width: 85%;
+        max-width: 85.5%;
+        margin-left: 20px;
+    }
+
+    section#content{
+        padding: 6em 2em 6em 1em;
+    }
+
+    
+}

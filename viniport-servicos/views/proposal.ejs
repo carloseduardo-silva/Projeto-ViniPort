@@ -3,10 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+ 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;400;300&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+
+    <link rel="stylesheet" href="/stylesheets/proposal.css">
     <title>ViniPort - Solice uma Proposta</title>
 </head>
 <body>
-    <h1> Solice uma Proposta </h1>
+    <%-include('inc/nav')-%>
+
+    <header>
+
+        <h1>Solicite uma Proposta</h1>
+        <p>Iremos oferecer o melhor serviço terceirizado para sua empresa</p>
+
+    </header>
+
+    <section id="content">
+
+        <div id="form-content">
+
+            <h2> Para nossa equipe entrar em contato, informe alguns dados:</h2>
+
+            <form action="">
+
+                <div class="row row1-form">
+
+                    <input placeholder="Nome Completo" id="name" type="text">
+
+                    <input placeholder="E-mail" id="email" type="text">
+                </div>
+
+                
+                <div class="row row2-form">
+
+                    <input placeholder="Telefone" id="tel" type="tel">
+
+                    <input placeholder="Empresa" id="empresa" type="text">
+                </div>
+
+                <div class="row row3-form">
+
+                    <label for="segmento"> Qual segmento terceirizado?</label>
+                    <input placeholder="Ex: Limpeza, Segurança..." name="segmento" id="segmento" type="tel">
+
+
+                    <label for="profissionais">Nº de postos terceizados</label>
+                    <input placeholder="Ex: 20 profissionais" id="profissionais" name="profissionais" type="text">
+                </div>
+
+                <textarea placeholder="Deixe sua Mensagem..." name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+               <button type="submit">SOLICITAR PROPOSTA</button>
+
+            </form>
+
+        </div>
+
+        <div id="contact">
+            <h2> Entre em contato:</h2>
+
+            <div class="row-contact"> 
+                <span class="material-symbols-outlined">call</span>
+                <p>(11) 94764-9052 </p>
+            </div>
+
+            <div class="row-contact"> 
+
+                <span class="material-symbols-outlined">mail</span>
+                <p> viniportservicos@hotmail.com </p></div>
+
+            <div class="row-contact"> 
+
+                <span class="material-symbols-outlined">location_on </span>
+                <p> Rua Topázio, 195 - Diadema - SP </p></div>
+
+        </div>
+
+    </section>
+
+
+    <%-include('inc/footer')-%>
+
     
 </body>
 </html>
