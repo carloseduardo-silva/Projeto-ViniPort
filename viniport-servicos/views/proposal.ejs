@@ -24,6 +24,7 @@
     
 
     <link rel="stylesheet" href="/stylesheets/proposal.css">
+
     <title>ViniPort - Solice uma Proposta</title>
 </head>
 <body>
@@ -42,31 +43,37 @@
 
             <h2> Para nossa equipe entrar em contato, informe alguns dados:</h2>
 
-            <form action="">
+            <%- include('inc/validation') -%>
+
+            <form method="POST" action="/proposal">
 
                 <div class="row row1-form">
 
-                    <input placeholder="Nome Completo" id="name" type="text">
+                    <input placeholder="Nome Completo" name="name"  id="name" type="text">
 
-                    <input placeholder="E-mail" id="email" type="text">
+                    <input placeholder="E-mail" name="email" id="email" type="text">
                 </div>
 
                 
                 <div class="row row2-form">
 
-                    <input placeholder="Telefone" id="tel" type="tel">
+                    <input placeholder="Telefone" name="tel" id="tel" type="tel">
 
-                    <input placeholder="Empresa" id="empresa" type="text">
+                    <input placeholder="Empresa" name="empresa" id="empresa" type="text">
                 </div>
 
                 <div class="row row3-form">
 
-                    <label for="segmento"> Qual segmento terceirizado?</label>
-                    <input placeholder="Ex: Limpeza, Segurança..." name="segmento" id="segmento" type="tel">
+                    <div class="row3-info">
+                        <label for="segmento"> Qual segmento terceirizado?</label>
+                        <input placeholder="Ex: Limpeza, Segurança..." name="segmento" id="segmento" type="tel">
+                    </div>
 
 
-                    <label for="profissionais">Nº de postos terceizados</label>
-                    <input placeholder="Ex: 20 profissionais" id="profissionais" name="profissionais" type="text">
+                    <div class="row3-info">
+                        <label for="profissionais">Nº de postos terceizados</label>
+                        <input placeholder="Ex: 20 profissionais" id="profissionais" name="profissionais" type="text">
+                    </div>
                 </div>
 
                 <textarea placeholder="Deixe sua Mensagem..." name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
@@ -104,4 +111,7 @@
 
     
 </body>
+
+<script src="/javascripts/proposalController.js"></script>
+<script src="/javascripts/proposalView.js"></script>
 </html>

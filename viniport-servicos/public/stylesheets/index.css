@@ -11,6 +11,10 @@
 
 }
 
+.active-home{
+    border-bottom: 3px solid var(--color-azul);
+}
+
 #nav{
     position: fixed;
     width: 100%;
@@ -888,5 +892,21 @@ footer{
     }
     
     
+    
+}
+
+@media (max-width:580px) {
+
+    .proposal-content h1{
+     
+        font-size: 1.2em;
+        
+    }
+    
+    .proposal-content p {
+        font-size:14.5px
+      
+        
+    }
     
 }

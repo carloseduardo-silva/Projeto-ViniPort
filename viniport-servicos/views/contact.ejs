@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+ 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;400;300&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+
     <title>ViniPort - Contato</title>
 </head>
 <body>
-    <h1> Contato </h1>
+   
+    <%-include('inc/nav')-%>
+
+    <header>
+
+        <h1>Fale Conosco</h1>
+        <p>Sua mensagem é muito importante para nós.</p>
+
+    </header>
+
+    <section id="content">
+
+        <div id="form-content">
+
+            <h2> Deixe sua Mensagem</h2>
+
+         <%- include('inc/validation') -%>
+
+            <form method="POST" action="/contact">
+
+                <div class="row row1-form">
+
+                    <input placeholder="Nome Completo" name="name" id="name" type="text">
+
+                    <input placeholder="E-mail" name="email" id="email" type="text">
+                </div>
+
+                
+                <div class="row row2-form">
+
+                    <input placeholder="Telefone" name="tel" id="tel" type="tel">
+
+                    <input placeholder="Empresa" name="empresa" id="empresa" type="text">
+                </div>
+
+              
+
+                <textarea placeholder="Deixe sua Mensagem..." name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+               <button type="submit">ENVIAR MENSAGEM</button>
+
+            </form>
+
+        </div>
+
+        <div id="contact">
+            <h2> Nosso escritório</h2>
+
+            <div class="row-contact"> 
+                <span class="material-symbols-outlined">call</span>
+                <p>(11) 94764-9052 </p>
+            </div>
+
+            <div class="row-contact"> 
+
+                <span class="material-symbols-outlined">mail</span>
+                <p> viniportservicos@hotmail.com </p></div>
+
+            <div class="row-contact"> 
+
+                <span class="material-symbols-outlined">location_on </span>
+                <p> Rua Topázio, 195 - Diadema - SP </p></div>
+
+        </div>
+
+    </section>
+
+
+    <%-include('inc/footer')-%>
+
+    
+
 </body>
+
+<script src="/javascripts/contactController.js"></script>
+<script src="/javascripts/contactView.js"></script>
 </html>
