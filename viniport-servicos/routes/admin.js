@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var users = require('../inc/users')
+var proposal = require('../inc/proposal')
+var contact = require('../inc/contact')
+var admin = require('../inc/admin')
+var employee = require('../inc/employee')
 
 /* GET users listing. */
 
@@ -16,7 +20,19 @@ router.use(function(req, res , next){
 })
 
 router.get('/', function(req, res, next) {
-  res.render('admin/index', { title: 'Express'})
+
+ admin.dashBoard().then(result =>{
+
+res.render('admin/index',  {
+  title: 'ViniPort', 
+  contacts: result.nrcontacts,
+  proposal: result.nrproposal,
+  users: result.nrusers,
+  employee: result.nremployee})
+ }).catch(err =>{
+  console.log(err)
+ })
+
 });
 
 
@@ -63,20 +79,69 @@ router.get('/logout', function(req, res, next){
 
 })
 
-router.get('/employee', function(req, res, next) {
-  res.render('admin/employee', {title: 'ViniPort Servicos'})
+router.get('/proposal', function(req, res, next) {
+  
+  proposal.getProposal().then(data =>{
+
+    res.render('admin/proposal', {
+        title:'ViniPort Servicos',
+        data
+    })
+
+  }).catch(err =>{
+    console.log(err)
+})
+
 });
 
 router.get('/contacts', function(req, res, next) {
-  res.render('admin/contacts', {title: 'ViniPort Servicos'})
+
+  contact.getContacts().then(data =>{
+
+    res.render('admin/contacts', {
+        title:'ViniPort Servicos',
+        data
+    })
+
+  }).catch(err =>{
+    console.log(err)
+})
+
+
 });
 
 router.get('/users', function(req, res, next) {
-  res.render('admin/users', {title: 'ViniPort Servicos'})
+
+  users.getUsers().then(data =>{
+
+    res.render('admin/users', {
+        title:'ViniPort Servicos',
+        data
+    })
+
+  }).catch(err =>{
+    console.log(err)
+})
+
+
 });
 
-router.get('/proposal', function(req, res, next) {
-  res.render('admin/proposal', {title: 'ViniPort Servicos'})
+router.get('/employee', function(req, res, next) {
+
+  employee.getEmployee().then(data => {
+
+    res.render('admin/employee', {
+      title: 'ViniPort Servicos',
+      date: '',
+      data
+  })
+}).catch(err =>{
+  console.log(err)
+})
+
+
+
+
 });
 
 module.exports = router;

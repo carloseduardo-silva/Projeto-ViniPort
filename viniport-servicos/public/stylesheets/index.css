@@ -149,6 +149,7 @@ button{
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    
 }
 
 button:hover{
@@ -654,6 +655,15 @@ section#introduction{
     border-right: 1px solid rgba(255, 255, 255, 0.7);
 }
 
+.service p:hover{
+    cursor: pointer;
+}
+
+.service h2:hover{
+    cursor: pointer;
+    color: var(--color-azul-claro);
+}
+
 .service-Security:hover{
   
     transition: 1000ms;
@@ -826,7 +836,7 @@ footer{
     section#proposal{
         flex-direction: row;
         justify-content: space-around;
-        padding: 2.75em 1em 2em 1em;
+        padding: 2.75em 1em 2.75em 1em;
     }
 
     section#proposal button{

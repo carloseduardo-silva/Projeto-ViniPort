@@ -139,4 +139,23 @@ router.get('/institucional', function(req, res, next) {
   res.render('institucional', { title: 'Express' });
 });
 
+router.get('/security', function(req, res, next) {
+  res.render('security', { title: 'Express' });
+});
+
+router.get('/work', function(req, res, next) {
+  res.render('work', { title: 'Express' });
+});
+
+router.get('/cleanUp', function(req, res, next) {
+  res.render('cleanUp', { title: 'Express' });
+});
+
+router.get('/system', function(req, res, next) {
+  res.render('system', { title: 'Express' });
+});
+
+
+
+
 module.exports = router;
