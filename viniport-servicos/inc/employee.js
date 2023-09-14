@@ -32,6 +32,30 @@ module.exports = {
             })
 
         })
+    },
+
+    excludeEmployee(id){
+
+        return new Promise((s, f) =>{
+
+            conn.query(`
+            DELETE FROM tb_employee WHERE id = ?`, [ 
+                id 
+            ],
+            (err, results) =>{
+
+                if(err){
+                    f(err)
+                } else{
+                    s(results)
+                }
+
+            })
+
+        })
+
     }
+
+
 
 }

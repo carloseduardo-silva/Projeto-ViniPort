@@ -94,6 +94,20 @@ router.get('/proposal', function(req, res, next) {
 
 });
 
+router.delete('/proposal/:id', function(req, res, next){
+
+  proposal.excludeProposal(req.params.id).then(result =>{
+
+      res.send(result)
+
+  }).catch(err =>{
+
+      res.send(err)
+
+  })
+
+})
+
 router.get('/contacts', function(req, res, next) {
 
   contact.getContacts().then(data =>{
@@ -110,6 +124,20 @@ router.get('/contacts', function(req, res, next) {
 
 });
 
+router.delete('/contacts/:id', function(req, res, next){
+
+  contact.excludeContacts(req.params.id).then(result =>{
+
+      res.send(result)
+
+  }).catch(err =>{
+
+      res.send(err)
+
+  })
+
+})
+
 router.get('/users', function(req, res, next) {
 
   users.getUsers().then(data =>{
@@ -123,6 +151,20 @@ router.get('/users', function(req, res, next) {
     console.log(err)
 })
 
+
+});
+
+router.delete('/users/:id', function(req, res, next){
+
+  users.excludeUsers(req.params.id).then(result =>{
+
+      res.send(result)
+
+  }).catch(err =>{
+
+      res.send(err)
+
+  })
 
 });
 
@@ -143,5 +185,18 @@ router.get('/employee', function(req, res, next) {
 
 
 });
+
+router.delete('/employee/:id', function(req, res, next){
+
+  employee.excludeEmployee(req.params.id).then(result =>{
+
+      res.send(result)
+
+  }).catch(err =>{
+
+      res.send(err)
+  })
+});
+
 
 module.exports = router;

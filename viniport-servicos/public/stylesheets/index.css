@@ -7,7 +7,8 @@
 :root{
     --color-azul-escuro: #0d0221;
     --color-azul-claro: #a6cfd5;
-    --color-azul: #26408b
+    --color-azul: #26408b;
+    --color-azul-fundo: #456fb3;
 
 }
 
@@ -57,7 +58,7 @@ div#content-nav ul {
 
 div#content-nav ul a {
     text-decoration: none;
-    color: black;
+    color: rgb(87, 87, 87);
     ;
 }
 
@@ -111,7 +112,7 @@ header{
     flex-direction: column;
     color: white;
     background-color: var(--color-azul-escuro);
-    background-image: url(/images/fundo-headerM.png);
+    background-image: url(/images/fundo-headerT4.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -297,7 +298,7 @@ section#certification{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4em 2em 9em 2em;
+    padding: 6em 2em 9.5em 2em;
 }
 
 section#certification h1{
@@ -305,6 +306,7 @@ section#certification h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 2.5em;
+    margin-bottom: -15px;
 }
 
 .h1-certification{
@@ -371,7 +373,7 @@ section#references{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3.65em 3em 4em 3em;
+    padding: 4em 3em 4.75em 3em;
     border-bottom: 1px solid grey;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.426);
 }
@@ -380,30 +382,60 @@ section#references h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 1.85em;
+    margin-bottom: -16px;
 
 }
 
 #carrousel{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     margin: 1em 1em 2em 1em;
-    width: 70%;
+    width: 85%;
     background-color: rgb(255, 255, 255);
     overflow-x: scroll;
     
 
 }
 ::-webkit-scrollbar{
-    background-color: transparent;
-    color: grey;
+    background-color:rgb(193, 193, 193);
+    color: rgb(225, 23, 23);
 }
 
 #carrousel img{
     height: 115px;
     width: 110px;
+    margin: 0em 2em;
 
 }
+
+
+
+
+#carrousel-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+#carrousel-parent span{
+    color: var(--color-azul);
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#carrousel-parent :hover{
+    cursor: pointer;
+    color: var(--color-azul-claro);
+    transition: 400ms;
+}
+
+
+
+
 
 
 footer{
@@ -484,6 +516,21 @@ footer img{
     display: none;
 }
 
+.active{
+
+    opacity: 1;
+}
+
+.active-left{
+
+    opacity: 1;
+}
+
+.active-right{
+
+    opacity: 1;
+}
+
 .p-content{
     margin: 10px 0px;
 
@@ -548,7 +595,7 @@ header{
     height: 90vh;
     align-items: start;
     padding: 10em 0em 10em 9em;
-    background-image: url(/images/fundo-header5.png);
+    background-image: url(/images/fundo-headerT4.png);
     background-position: top center;
     
 }
@@ -559,12 +606,12 @@ header{
     justify-content: center;
     flex-direction: column;
     margin: 4.5em 1em;
-    width: 45%;
+    width: 55%;
 
 }
 
 .content-header h1{
-    font-size: 3em ;
+    font-size: 3.5em ;
     text-align: left;
     margin: 0.45em 0em;
 }
@@ -573,6 +620,7 @@ header{
     font-size: 15px ;
     text-align: left;
     line-height: 30px;
+    margin-right: 85px;
     
 }
 
@@ -592,7 +640,7 @@ header{
 
 #main-header button a{
     font-size: 1.3em;
-    font-family: 'Roboto', sans-serif;
+ 
 
 
 }
@@ -762,18 +810,19 @@ footer{
 @media (min-width:1000px) {
 
     .content-header h1{
-        font-size: 4em ;
+        font-size: 4.4em ;
       
     }
     
     .content-header p{
-        font-size: 18px ;
+        font-size: 18px;
+        margin-right: 150px;
       
         
     }
 
     header{
-        padding: 12em 0em 10em 9em;
+        padding: 10.75em 0em 10em 9em;
     }
 
     section#introduction{
@@ -836,7 +885,7 @@ footer{
     section#proposal{
         flex-direction: row;
         justify-content: space-around;
-        padding: 2.75em 1em 2.75em 1em;
+        padding: 3.1em 1em 2.75em 1em;
     }
 
     section#proposal button{
@@ -900,6 +949,10 @@ footer{
         transition: 700ms;
         
     }
+
+    #carrousel{
+        width: 570px;
+    }
     
     
     
@@ -918,5 +971,27 @@ footer{
       
         
     }
+
+    section#references{
+        padding: 3.7em 3em 4.5em 3em;
+    }
+    
+    section#references h1{
+        font-size: 1.67em;
+        margin-bottom: -16px;
+    
+    }
+
+    section#certification{
+        padding: 4.5em 2em 8em 2em;
+    }
+    
+    section#certification h1{
+
+        font-size: 2.4em;
+        margin-bottom: -15px;
+    }
+
+
     
 }

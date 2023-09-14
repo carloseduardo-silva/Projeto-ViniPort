@@ -70,5 +70,29 @@ module.exports = {
             });
         });
 
+    }, 
+
+    excludeUsers(id){
+
+        return new Promise((s, f) =>{
+
+            conn.query(`
+            DELETE FROM tb_users WHERE id = ?`, [ 
+                id 
+            ],
+            (err, results) =>{
+
+                if(err){
+                    f(err)
+                } else{
+                    s(results)
+                }
+
+            })
+
+        })
+
     }
+
+
 }

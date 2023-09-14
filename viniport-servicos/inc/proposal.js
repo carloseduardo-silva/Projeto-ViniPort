@@ -61,6 +61,30 @@ module.exports = {
             })
 
         })
+    },
+
+    excludeProposal(id){
+
+        return new Promise((s, f) =>{
+
+            conn.query(`
+            DELETE FROM tb_proposal WHERE id = ?`, [ 
+                id 
+            ],
+            (err, results) =>{
+
+                if(err){
+                    f(err)
+                } else{
+                    s(results)
+                }
+
+            })
+
+        })
+
     }
+
+
 
 }

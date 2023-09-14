@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="/stylesheets/index.css">
 
+  <link rel="stylesheet" href="/stylesheets/swiper.css">
+
+
 
   <title>ViniPort Serviços</title>
 </head>
@@ -104,19 +107,38 @@
 
     <div class="h1-certification">
       <h1>Parceiros ViniPort Serviços</h1>
-      <span style="font-size: 75px;;" class="material-symbols-outlined">
+      <span style="font-size: 95px;;" class="material-symbols-outlined">
         horizontal_rule
         </span>
     </div>
 
-    <div id="carrousel">
+  
+    <div id="carrousel-parent" >
 
-      <img style="height: 110px;" src="images/logo-speed.png" alt="">
-      <img src="images/logo-habibs.png" alt="">
-      <img src="images/logo-mcdonald.png" alt="">
-      <img src="images/logo-zincagem.png" alt="">
-      <img src="images/logo-pao.png" alt="">
 
+      <div class="button-prev"><span class="material-symbols-outlined">
+        arrow_back_ios
+        </span></div>
+
+      <div id="carrousel">
+        <!-- Slides -->
+        <div class="img-slide hide"> <img style="height: 110px;" src="images/logo-speed.png" alt="speed"></div>
+
+        <div class="img-slide active-left"> <img src="images/logo-habibs.png" alt="habibs"></div>
+
+        <div class="img-slide active"> <img src="images/logo-mcdonald.png" alt="mcdonalds"></div>
+
+        <div class="img-slide active-right "> <img src="images/logo-zincagem.png" alt="zincagem"></div>
+
+        <div class="img-slide hide"> <img src="images/logo-pao.png" alt="pao"></div>
+        
+      </div>
+
+      
+      <div class="button-next"><span class="material-symbols-outlined">
+        arrow_forward_ios
+        </span></div>
+      
     </div>
 
   </section>
@@ -127,9 +149,12 @@
 
 
 
-  
 </body>
 
 <script src="/javascripts/indexController.js"></script>
 <script src="/javascripts/indexView.js"></script>
+
+
+
+
 </html>
