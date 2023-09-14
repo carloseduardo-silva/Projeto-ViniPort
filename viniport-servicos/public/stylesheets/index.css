@@ -112,7 +112,7 @@ header{
     flex-direction: column;
     color: white;
     background-color: var(--color-azul-escuro);
-    background-image: url(/images/fundo-headerT4.png);
+    background-image: url(/images/fundo-headerT6.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -395,22 +395,21 @@ section#references h1{
     width: 85%;
     background-color: rgb(255, 255, 255);
     overflow-x: scroll;
-    
+     
 
 }
 ::-webkit-scrollbar{
-    background-color:rgb(193, 193, 193);
-    color: rgb(225, 23, 23);
+    background-color: transparent;
+   
 }
 
 #carrousel img{
     height: 115px;
-    width: 110px;
+   
     margin: 0em 2em;
+    transition:600ms ;
 
 }
-
-
 
 
 #carrousel-parent{
@@ -418,7 +417,7 @@ section#references h1{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 95%;
 }
 
 #carrousel-parent span{
@@ -595,7 +594,7 @@ header{
     height: 90vh;
     align-items: start;
     padding: 10em 0em 10em 9em;
-    background-image: url(/images/fundo-headerT4.png);
+    background-image: url(/images/fundo-headerT6.png);
     background-position: top center;
     
 }
@@ -951,7 +950,15 @@ footer{
     }
 
     #carrousel{
-        width: 570px;
+        width: auto;
+    }
+
+    .button-prev{
+        margin-left: 2em;
+    }
+
+    .button-next{
+        margin-right: 2em;
     }
     
     

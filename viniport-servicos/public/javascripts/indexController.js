@@ -7,6 +7,8 @@ class indexController{
         this.imgSlideArr = document.querySelectorAll('.img-slide')
         this.nextBtn = document.querySelector('.button-next')
         this.previousBtn = document.querySelector('.button-prev')
+        this.count = 0;
+    
 
         this.menuHamburguerToggle()
         this.serviceSectionHover()
@@ -45,10 +47,58 @@ class indexController{
 
     next(){
 
+        if(this.count === -720){
+            this.imgSlideArr.forEach(img =>{
+                img.style.transform = `translateX(0px)`
+                img.style.transition = `600ms`
+             })
+        
+             this.count = 0
+
+        } else{
+
+            this.imgSlideArr.forEach(img =>{
+               img.style.transform = `translateX(${this.count - 80}px)`
+               img.style.transition = `600ms`
+            })
+       
+            this.count = this.count - 80
+
+        }
+     
+    
+
+        
+     console.log(this.count)
     }
 
     previous(){
 
+
+        if(this.count === 720){
+            this.imgSlideArr.forEach(img =>{
+                img.style.transform = `translateX(0px)`
+                img.style.transition = `600ms`
+             })
+        
+             this.count = 0
+
+        }
+        else{
+
+            this.imgSlideArr.forEach(img =>{
+                img.style.transform = `translateX(${this.count + 80}px)`
+                img.style.transition = `600ms`
+             })
+    
+             this.count = this.count + 80
+             
+
+        } 
+
+      
+    
+        console.log(this.count)
 
     }
 
