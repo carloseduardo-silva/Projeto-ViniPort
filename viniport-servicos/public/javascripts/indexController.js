@@ -7,19 +7,42 @@ class indexController{
         this.imgSlideArr = document.querySelectorAll('.img-slide')
         this.nextBtn = document.querySelector('.button-next')
         this.previousBtn = document.querySelector('.button-prev')
+        this.sectionArr = document.querySelectorAll('.hidden')
+        
         this.count = 0;
     
 
         this.menuHamburguerToggle()
         this.serviceSectionHover()
         this.carrousel()
-        console.log(this.imgSlideArr)
+        this.observe()
+    }
+
+    observe(){
+
+        const myObserve = new IntersectionObserver( entries =>{
+
+            entries.forEach(entry =>{
+
+                if(entry.isIntersecting === true){
+                    entry.target.classList.add('show')
+                }
+                else{
+                    entry.target.classList.remove('show')
+                }
+
+            })
+
+        })
+
+        this.sectionArr.forEach( section =>{
+            myObserve.observe(section)
+        })
+
     }
 
 
-
     menuHamburguerToggle(){
-
         this.menuHamburguerBtn.addEventListener('click', e =>{
 
             this.navContent.classList.toggle('none')
@@ -67,9 +90,7 @@ class indexController{
         }
      
     
-
-        
-     console.log(this.count)
+     
     }
 
     previous(){
