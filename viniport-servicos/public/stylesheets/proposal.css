@@ -7,7 +7,8 @@
 :root{
     --color-azul-escuro: #0d0221;
     --color-azul-claro: #a6cfd5;
-    --color-azul: #26408b
+    --color-azul: #26408b;
+    --color-azul-fundo: #456fb3;
 
 }
 
@@ -19,7 +20,7 @@
 }
 
 .proposal-active{
-    border-bottom: 3px solid var(--color-azul);
+    border-bottom: 3px solid var(--color-azul-fundo);
 }
 
 #nav{
@@ -46,9 +47,9 @@ div.logo-nav{
 }
 
 div.logo-nav img{
-    width: 60px;
-    height: 50px;
-    margin: 1em;
+    width: 85px;
+    height: 75px;
+    margin: 8px 1em 8px 1.5em;
 }
 
 div#content-nav{
@@ -68,7 +69,7 @@ div#content-nav ul a {
 }
 
 div#content-nav ul a:hover {
-   color: var(--color-azul);
+   color: var(--color-azul-fundo);
   
 
 }
@@ -80,7 +81,7 @@ div#content-nav ul li {
 }
 div#content-nav ul li:hover{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    color: var(--color-azul)
+    color: var(--color-azul-fundo)
     
 }
 
@@ -99,14 +100,13 @@ div.icons-nav{
 .icon{
     width: 25px;
     height: 25px;
-    margin: 10px ;
+    margin: 10px 15px ;
 
 }
 
 .icon:hover{
-    width: 27px;
-    height: 27px;
-    transition: 200ms;
+    transform: scale(1.17);
+    transition: 250ms;
     cursor: pointer;
 
 }
@@ -117,8 +117,7 @@ header{
     justify-content: center;
     flex-direction: column;
     color: white;
-    background-color: var(--color-azul-escuro);
-    background-image: url(/images/fundo-headerM.png);
+    background-image: linear-gradient(#0d0221, #456fb3, #456fb3);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -134,7 +133,7 @@ header h1{
 }
 
 header h1:hover{
-   color: var(--color-azul);
+   color: var(--color-azul-fundo);
    transition: 700ms;
     cursor: pointer;
     
@@ -269,8 +268,8 @@ form button{
 }
 
 form button:hover{
-    padding: 1.25em 2.15em;
-    transition: 500ms;
+    transform: scale(1.04);
+    transition: 400ms;
     cursor: pointer;
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
@@ -328,10 +327,10 @@ footer{
 
 
 footer img{
-    width: 60px;
-    height: 50px;
+    width: 102px;
+    height: 92px;
     margin: 1em;
-    border-radius: 20px;
+   
 
 }
 
@@ -444,8 +443,8 @@ footer img{
         height:auto;
         align-items:center;
         padding: 17em 1em 8em 1em;
-        background-image: url(/images/fundo-headerM.png);
-        background-position: top center;
+        background-image: linear-gradient(#0d0221, #456fb3, #456fb3);
+        background-position:  center;
         
     }
 
