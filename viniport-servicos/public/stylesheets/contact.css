@@ -122,7 +122,8 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
-    padding: 14em 1em 8em 1em;
+    padding: 13em 1em 7.25em 1em;
+    height: 20vh;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -429,9 +430,7 @@ footer img{
     }
     
     header{
-        height:auto;
-        align-items:center;
-        padding: 17em 1em 8em 1em;
+        
         background-image: linear-gradient(#0d0221, #456fb3, #456fb3);
         background-position: center;
         
@@ -496,10 +495,7 @@ footer img{
         
     }
 
-    header{
-        padding: 15em 1em 8em 1em;
-    }
-
+ 
     .div-content p{
         margin: 0.25em 1.5em 1.5em 1.5em;
     }
